@@ -1,1 +1,24 @@
-<p>customer-detail works!</p>
+<mat-card class="customer-detail-header">
+    <button mat-icon-button class="menu-triple-points" [matMenuTriggerFor]="customerMenu">
+        <mat-menu #customerMenu="matMenu">
+            <button mat-menu-item (click)="editCustomer()">Bearbeiten</button>
+          </mat-menu>
+        <mat-icon>more_vert</mat-icon>
+      </button>
+  <img src="../../assets/img/profile-placeholder.jpg" />
+  <div class="customer-details">
+    <h2>{{ customer.firstName }} {{ customer.Lastname }}</h2>
+    <p>{{ customer.email }}</p>
+  </div>
+</mat-card>
+
+<mat-card class="customer-detail-content">
+    <button mat-icon-button class="menu-triple-points" [matMenuTriggerFor]="detailsMenu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #detailsMenu="matMenu">
+        <button mat-menu-item (click)="editAddress()">Bearbeiten</button>
+      </mat-menu>
+  <p>{{ customer.street }} {{ customer.houseNumber }}</p>
+  <p>{{ customer.zipCode }} {{ customer.city }}</p>
+</mat-card>

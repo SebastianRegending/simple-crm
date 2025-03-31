@@ -2,37 +2,37 @@
 <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
 
 <h2 mat-dialog-title>Kunde hinzufügen</h2>
-<mat-dialog-content>
+<mat-dialog-content class="dialog-content">
   <div>
-  <mat-form-field class="mr-16 width-reg" appearance="outline">
+  <mat-form-field class="mr-16 width-reg outline-green" appearance="outline">
     <mat-label>Vorname</mat-label>
     <input matInput [(ngModel)]="customer.firstName" required [disabled]="loading">
   </mat-form-field>
-  <mat-form-field class="width-reg" appearance="outline">
+  <mat-form-field class="width-reg outline-green" appearance="outline">
     <mat-label>Nachname</mat-label>
     <input matInput [(ngModel)]="customer.lastName" required [disabled]="loading">
   </mat-form-field>
 </div>
 <div>
-    <mat-form-field class="mr-16 width-md " appearance="outline">
+    <mat-form-field class="mr-16 width-md outline-green" appearance="outline">
       <mat-label>Straße</mat-label>
       <input matInput [(ngModel)]="customer.street" required [disabled]="loading">
     </mat-form-field>
-    <mat-form-field class="width-sm" appearance="outline">
+    <mat-form-field class="width-sm outline-green" appearance="outline">
       <mat-label>Nr.</mat-label>
       <input matInput [(ngModel)]="customer.houseNumber" required [disabled]="loading">
     </mat-form-field>
   </div>
   <div>
-    <mat-form-field class="mr-16 width-sm" appearance="outline">
+    <mat-form-field class="mr-16 width-sm outline-green" appearance="outline">
       <mat-label>PLZ</mat-label>
       <input matInput [(ngModel)]="customer.zipCode" required [disabled]="loading">
     </mat-form-field>
-    <mat-form-field class="width-md" appearance="outline">
+    <mat-form-field class="width-md outline-green" appearance="outline">
       <mat-label>Stadt</mat-label>
       <input matInput [(ngModel)]="customer.city" required [disabled]="loading">
     </mat-form-field>
-    <mat-form-field class="full-width" appearance="outline">
+    <mat-form-field class="full-width outline-green" appearance="outline">
     <mat-label>E-Mail</mat-label>
     <input matInput [(ngModel)]="customer.email" required [disabled]="loading">
     </mat-form-field>

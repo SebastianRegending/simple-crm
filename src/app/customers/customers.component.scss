@@ -5,13 +5,16 @@
 }
 
 tr {
-    height: 32px;
+    height: 56px;
     cursor: pointer;
     &:hover {
         background-color: rgba(255, 255, 255, 0.1);
     }
     th {
         text-align: left;
+    }
+    td {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
 
