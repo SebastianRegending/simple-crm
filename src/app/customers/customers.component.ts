@@ -1,7 +1,6 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconButton } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialog } from '@angular/material/dialog';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -18,7 +17,6 @@ import { RouterModule } from '@angular/router';
   imports: [
     MatIconModule,
     MatButtonModule,
-    MatIconButton,
     MatTooltipModule,
     MatDialogModule,
     MatCardModule,

@@ -3,7 +3,6 @@ import {
   MAT_DIALOG_DATA,
   MatDialog,
   MatDialogActions,
-  MatDialogClose,
   MatDialogContent,
   MatDialogRef,
   MatDialogTitle,
@@ -23,7 +22,6 @@ import { NgIf } from '@angular/common';
   imports: [
     MatDialogContent,
     MatDialogActions,
-    MatDialogClose,
     MatDialogTitle,
     MatButton,
     MatInputModule,

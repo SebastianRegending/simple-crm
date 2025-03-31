@@ -7,9 +7,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
-import { MatFormField } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
-import { AsyncPipe } from '@angular/common';
 import { Firestore } from '@angular/fire/firestore';
 
 @Component({
@@ -24,9 +22,7 @@ import { Firestore } from '@angular/fire/firestore';
     MatButtonModule,
     RouterModule,
     MatInputModule,
-    MatFormField,
     MatCardModule,
-    AsyncPipe,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

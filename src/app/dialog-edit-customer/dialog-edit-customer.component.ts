@@ -3,7 +3,6 @@ import {
   MAT_DIALOG_DATA,
   MatDialog,
   MatDialogActions,
-  MatDialogClose,
   MatDialogContent,
   MatDialogRef,
   MatDialogTitle,
@@ -23,7 +22,6 @@ import { Firestore, doc, updateDoc } from '@angular/fire/firestore';
   imports: [
     MatDialogContent,
     MatDialogActions,
-    MatDialogClose,
     MatDialogTitle,
     MatButton,
     MatInputModule,

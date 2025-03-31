@@ -3,7 +3,6 @@ import { MatCard } from '@angular/material/card';
 import { ActivatedRoute } from '@angular/router';
 import { Firestore, doc, getDoc } from '@angular/fire/firestore';
 import { MatIcon } from '@angular/material/icon';
-import { MatButton } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogEditCustomerComponent } from '../dialog-edit-customer/dialog-edit-customer.component';
@@ -13,7 +12,7 @@ import { Customer } from '../../models/customer.class';
 @Component({
   selector: 'app-customer-detail',
   standalone: true,
-  imports: [MatCard, MatIcon, MatButton, MatMenuModule],
+  imports: [MatCard, MatIcon, MatMenuModule],
   templateUrl: './customer-detail.component.html',
   styleUrl: './customer-detail.component.scss',
 })
